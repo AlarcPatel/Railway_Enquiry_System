@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles/form.css">
+<link rel="stylesheet" href="styles/homepage.css">
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/homepage.css">
+<link rel="import" href="UI2.html">
+</head>
+<body>
+
+<div class="container">  
+
+  <form id="contact" action="addtrainschedule.jsp" method="post">
+    <h3>Add Train Schedule</h3>
+    <fieldset>
+      <input placeholder="Transit Line Name" type="text" tabindex="1" required autofocus name="transit_line_name">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Train ID" type="text" tabindex="3" required name="trainId">
+    </fieldset>
+     
+    <fieldset>
+      <input placeholder="Route ID" type="text" tabindex="4" required name="routeId">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Station Arrival Time" type="text" tabindex="4" required name="station_arrival_time">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Station Departure Time" type="text" tabindex="4" required name="station_departure_time">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Station ID" type="text" tabindex="4" required name="stationId">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Available Seats" type="text" tabindex="4" required name="available_seats">
+    </fieldset>
+    
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Adding">Submit</button>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
